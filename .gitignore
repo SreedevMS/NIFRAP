@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller & Build artifacts
+build/
+dist/
+*.manifest
+*.pkg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Visual Studio temporary files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Application runtime data & user exports
+data/exports/*
+!data/exports/.gitkeep
+data/downloads/*
+!data/downloads/.gitkeep
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
