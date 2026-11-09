@@ -2,6 +2,8 @@
 
 **NIFRAP 2.0** is a modernized, dark-themed desktop reconnaissance platform that unifies **live network packet sniffing**, **automatic HTTP/HTTPS web target detection**, **targeted multi-threaded web scraping**, and **multi-format intelligence reporting**.
 
+📖 **[Read the Full User Manual & Guide (USER_MANUAL.md)](USER_MANUAL.md)** for a detailed walkthrough with troubleshooting instructions.
+
 ---
 
 ## 🌟 The Core Workflow: Sniff ➔ Detect ➔ Scrape ➔ Store
@@ -65,32 +67,27 @@
 
 ---
 
-## 🛠️ Installation & Requirements
+## 🛠️ Quick Start & Installation
 
-### 1. Install Dependencies
+### Option A: Portable Standalone Executable (No Python Required)
+1. Download `NIFRAP-2.0-Windows-Portable.zip` from [Releases](https://github.com/SreedevMS/NIFRAP/releases).
+2. Extract the ZIP and double-click `NIFRAP_2.0.exe` (run as Administrator for live packet sniffing).
+
+### Option B: Running from Source
 ```bash
+git clone https://github.com/SreedevMS/NIFRAP.git
+cd NIFRAP
 pip install -r requirements.txt
-```
-
-### 2. Network Sniffing Driver (Windows)
-For live raw packet capture on Windows, install [Npcap](https://npcap.com/) with **"WinPcap API-compatible Mode"** enabled. (If Npcap is not installed or administrator access is not available, use the built-in **Demo Simulation** button to test).
-
----
-
-## 🖥️ Running the Application
-
-Launch NIFRAP 2.0 with:
-```bash
 python run.py
 ```
-Or via the Visual Studio solution `GUI NEW.sln` / `GUI NEW/GUI_NEW.py`.
+
+*(Note for live Windows capture: install [Npcap](https://npcap.com/) with WinPcap API-compatible mode enabled. If Npcap is not installed, use the built-in **Demo Simulation** mode).*
 
 ---
 
 ## 📁 Project Structure
 
 ```
-F:\GUI NEW\
 ├── nifrap/                     # Core application package
 │   ├── config.py              # Configuration & default paths
 │   ├── core/                  # Engine layer
@@ -111,6 +108,6 @@ F:\GUI NEW\
 │   └── downloads/             # Downloaded images
 ├── run.py                     # Main runner
 ├── requirements.txt           # Dependencies
+├── USER_MANUAL.md             # Complete user manual
 └── README.md                  # Documentation
 ```
-
